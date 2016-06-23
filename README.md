@@ -53,3 +53,7 @@ Two device nodes should appear ex. /dev/ttyUSB{0,1} . Give to others group read 
   #define SET_CCFG_BL_CONFIG_BL_PIN_NUMBER                0x0B
   #define SET_CCFG_BL_CONFIG_BL_ENABLE                 	  0xC5
   ```
+
+- The last value in "values" rows in angles.log is the integer representation of the angle the light arrived:
+
+  `1360689ms: values 7 4 4 0 4 4 0 17 35 96 48 16` **`47026`**
