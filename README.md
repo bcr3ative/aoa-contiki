@@ -44,7 +44,7 @@ Two device nodes should appear ex. /dev/ttyUSB{0,1} . Give to others group read 
 
 ## Notes:
 
-- To make Contiki not disable the bootloader or change the access input combo (on CC2650) make the following changes in CONTIKI_FOLDER/cpu/cc26xx-cc13xx/lib/cc26xxware/startup_files/ccfg.c :
+- To make Contiki not disable the bootloader or change the access input combo ( on CC2650 ) make the following changes in {CONTIKI_FOLDER}/cpu/cc26xx-cc13xx/lib/cc26xxware/startup_files/ccfg.c :
 
   Under bootloader settings:
   ```
