@@ -26,7 +26,7 @@ Two device nodes should appear ex. /dev/ttyUSB{0,1} . Give to others group read 
 
   `chmod o+rw /dev/ttyUSB{0,1}`
 
-- Install `srecord` package from your distribution package manager to enable makefile to manipulate EPROM load files 
+- Install `srecord` package from your distribution package manager to enable makefile to manipulate EPROM load files
 
 - Clone  AoA Contiki repository ( https://github.com/bcr3ative/aoa-contiki )
 
@@ -49,9 +49,9 @@ Two device nodes should appear ex. /dev/ttyUSB{0,1} . Give to others group read 
   Under bootloader settings:
   ```
   #define SET_CCFG_BL_CONFIG_BOOTLOADER_ENABLE            0xC5
-  #define SET_CCFG_BL_CONFIG_BL_LEVEL                  	  0x0
+  #define SET_CCFG_BL_CONFIG_BL_LEVEL                     0x0
   #define SET_CCFG_BL_CONFIG_BL_PIN_NUMBER                0x0B
-  #define SET_CCFG_BL_CONFIG_BL_ENABLE                 	  0xC5
+  #define SET_CCFG_BL_CONFIG_BL_ENABLE                    0xC5
   ```
 
 - The last value in "values" rows in angles.log is the integer representation of the angle the light arrived:

@@ -9,25 +9,25 @@ typedef struct {
 	uint8_t led;
 
 	// calibration params in polys2 format
-    float P1I;
-    float P1III;
-    float PII[5];  // for convenient calculation of cw_ccw
-    float CW_CCW[31];
+	float P1I;
+	float P1III;
+	float PII[5]; // for convenient calculation of cw_ccw
+	float CW_CCW[31];
 
-    // bias for section I and III, these values can be reduced to int
-    float P0I[AOA_INPUTS_NUM];
-    float P0III[AOA_INPUTS_NUM];
+	// bias for section I and III, these values can be reduced to int
+	float P0I[AOA_INPUTS_NUM];
+	float P0III[AOA_INPUTS_NUM];
 
-    // minimum value of maximum incident light accepted as reliable mesurement
-    uint16_t MAX_VAL_THRESHOLD;
+	// minimum value of maximum incident light accepted as reliable mesurement
+	uint16_t MAX_VAL_THRESHOLD;
 
-    //values of each photodetector reading
-    uint16_t values[AOA_INPUTS_NUM];
+	//values of each photodetector reading
+	uint16_t values[AOA_INPUTS_NUM];
 
-    //interference caused by exterior light on each photodetector
-    uint16_t interf[AOA_INPUTS_NUM];
-    uint16_t interf2[AOA_INPUTS_NUM];
-    int threshold;
+	//interference caused by exterior light on each photodetector
+	uint16_t interf[AOA_INPUTS_NUM];
+	uint16_t interf2[AOA_INPUTS_NUM];
+	int threshold;
 } AoAPlug;
 
 void AoAPlugInit(AoAPlug*, uint8_t);
